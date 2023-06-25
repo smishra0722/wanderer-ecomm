@@ -25,20 +25,20 @@ function NavbarNew() {
           </div>
           <ul>
             <li>
-              <Link to="/" className="cont active">
+              <Link to="/" className="cont active" style={{color: 'white'}}>
                 HOME
               </Link>
             </li>
             <li>
-              <Link to="/product" className="cont">
+              <Link to="/product" className="cont" style={{color: 'white'}}>
                 PRODUCTS
               </Link>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog" style={{color: 'white'}}>Blog</a>
             </li>
             <li>
-              <a href="#footer">Contacts</a>
+              <a href="#footer" style={{color: 'white'}}>Contacts</a>
             </li>
             <li>
               <div className="nav-searchbar">
