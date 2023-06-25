@@ -1,0 +1,12 @@
+.order-confirm {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2rem;
+}
+.order-confirm span:nth-child(1) {
+  color: #3406ff;
+}

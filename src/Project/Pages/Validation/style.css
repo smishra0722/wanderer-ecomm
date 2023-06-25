@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.image-valid {
+  width: 100%;
+}
+
+.image-valid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.valid-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.valid {
+  display: grid;
+  grid-auto-rows: max-content;
+  padding: 100px;
+}
+
+.valid h3 {
+  font-size: 2rem;
+}
+
+.valid h3 span {
+  font-size: 2.5rem;
+  color: rgb(0, 68, 255);
+}
+.valid input {
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+  padding-left: 5px;
+  margin: 50px 0 50px 0;
+  width: 30%;
+  transition: width 250ms ease-in;
+  cursor: pointer;
+}
+
+.valid input:focus {
+  outline: none;
+}
+
+.valid input:nth-child(4) {
+  margin: 0 0 20px 0;
+}
+.valid input:hover {
+  width: 100%;
+}
+
+.valid button {
+  font-size: 1rem;
+  padding: 5px;
+  width: 30%;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+  background-color: rgb(0, 255, 213, 0.7);
+  border: 1px solid rgb(0, 255, 213);
+  border-radius: 2px;
+  transition: background-color 250ms ease-in;
+}
+
+.valid button:hover {
+  border-radius: 2px;
+  background-color: rgb(0, 98, 255);
+  border: 1px solid rgb(0, 98, 255);
+  color: #fff;
+}
+
+.valid-span span:nth-child(2) {
+  color: rgb(0, 98, 255);
+}
+.up-in {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .valid-main {
+    height: 100vh;
+  }
+  .image-valid {
+    width: 100%;
+  }
+
+  .image-valid img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .valid {
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 100px 50px 50px 50px;
+  }
+  .valid h3 {
+    font-size: 1.5rem;
+  }
+
+  .valid h3 span {
+    font-size: 2rem;
+    color: rgb(0, 68, 255);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-valid {
+    width: 100%;
+  }
+
+  .image-valid img {
+    width: 100%;
+  }
+  .valid {
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 50px;
+  }
+  .valid h3 {
+    font-size: 1.4rem;
+  }
+
+  .valid h3 span {
+    font-size: 1.8rem;
+    color: rgb(0, 68, 255);
+  }
+}
+
+@media (max-width: 640px) {
+  .image-valid img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .valid-main {
+    width: 100%;
+    display: block;
+  }
+  .image-valid {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+
+  .image-valid img {
+    width: 100%;
+  }
+  .valid {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    place-content: center;
+    padding: 0 0;
+  }
+  .valid h3 {
+    font-size: 1.3rem;
+  }
+
+  .valid h3 span {
+    font-size: 1.5rem;
+    color: rgb(0, 68, 255);
+  }
+  .valid input {
+    width: 40%;
+  }
+  .valid button {
+    width: 40%;
+  }
+  .valid-span span {
+    font-size: 1rem;
+  }
+  .valid {
+    color: #fff;
+  }
+
+  .valid input {
+    color: black;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 40%;
+    background: transparent;
+    color: #fff;
+  }
+  .valid input:hover {
+    width: 100%;
+  }
+  .valid input::placeholder {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 320px) {
+  .valid-main {
+    height: 100vh;
+  }
+  .image-valid {
+    width: 100%;
+  }
+
+  .image-valid img {
+    width: 100%;
+  }
+  .valid {
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 50px 1px 50px 1px;
+  }
+  .valid h3 {
+    font-size: 0.9rem;
+  }
+
+  .valid h3 span {
+    font-size: 1.1rem;
+    color: rgb(0, 68, 255);
+  }
+  .valid input {
+    width: 60%;
+  }
+  .valid button {
+    width: 60%;
+  }
+  .valid-span span {
+    font-size: 1rem;
+  }
+}

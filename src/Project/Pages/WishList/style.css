@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.wishlist-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.wishlist-nav-bar span {
+  width: 100%;
+  border: 2px solid black;
+  border-right: none;
+}
+.wishlist-nav-bar span:nth-child(4) {
+  border-right: 2px solid black;
+}
+.wishlist-nav-bar span:nth-child(2) {
+  padding-right: 7%;
+}
+.wishlist-nav-bar span:nth-child(3) {
+  width: 50%;
+}
+
+.wishlist-nav-bar span:nth-child(1) {
+  width: 50%;
+}
+.wishlist-nav-bar span:nth-child(4) {
+  width: 78%;
+}
+.wishlist-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wishlist-item img {
+  width: 60px;
+  height: 100px;
+}
+
+.wishlist-item p {
+  font-size: 1rem;
+  width: 30%;
+  height: 100px;
+  overflow: scroll;
+}
+
+.wishlist-item {
+  width: 100%;
+  margin-top: 2%;
+  padding-top: 1%;
+}
+.wishlist-item span:nth-child(3) {
+  color: rgb(43, 22, 233);
+}
+
+.wishlist-item span:nth-child(4) {
+  color: rgb(20, 163, 20);
+}
+
+.wishlist-item button {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.wishlist-item button:hover {
+  padding: 0.8rem;
+  background-color: rgb(15, 114, 226);
+}
+.wishlist-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+@media (min-width: 768px) {
+  .wishlist-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 1%;
+  }
+  .wishlist-nav-bar span:nth-child(4) {
+    width: 70%;
+  }
+  .wishlist-nav-bar span:nth-child(2) {
+    width: 70%;
+  }
+
+  .wishlist-item span:nth-child(4) {
+    color: rgb(20, 163, 20);
+    width: 15%;
+  }
+  .wishlist-item p {
+    font-size: 1.2rem;
+    width: 25%;
+    height: 100px;
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wishlist-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1%;
+  }
+  .wishlist-nav-bar span:nth-child(4) {
+    width: 70%;
+  }
+  .wishlist-item img {
+    width: 60px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wishlist-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 4.5%;
+    margin-top: 1%;
+  }
+
+  .wishlist-nav-bar span {
+    padding-left: 5%;
+  }
+  .wishlist-item img {
+    width: 70px;
+    height: 110px;
+  }
+  .wishlist-item p {
+    font-size: 1.2rem;
+    width: 25%;
+    height: 100px;
+    overflow: scroll;
+  }
+  .wishlist-item button {
+    padding: 0.8rem;
+    border-radius: 20px;
+  }
+
+  .wishlist-item button:hover {
+    font-size: 1rem;
+    background-color: rgb(15, 114, 226);
+  }
+}
+
+@media (min-width: 1536px) {
+  .wishlist-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 4.5%;
+    margin-top: 1%;
+  }
+
+  .wishlist-nav-bar span {
+    padding-left: 5%;
+  }
+  .wishlist-item img {
+    width: 100px;
+    height: 110px;
+  }
+  .wishlist-item p {
+    font-size: 1.2rem;
+    width: 25%;
+    height: 100px;
+    overflow: visible;
+  }
+  .wishlist-item button {
+    padding: 0.8rem;
+    border-radius: 20px;
+  }
+
+  .wishlist-item button:hover {
+    font-size: 1rem;
+    background-color: rgb(15, 114, 226);
+  }
+  .wishlist-item span:nth-child(4) {
+    color: rgb(20, 163, 20);
+    width: 10%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .wishlist-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 4.5%;
+    margin-top: 1%;
+  }
+
+  .wishlist-nav-bar span {
+    padding-left: 5%;
+  }
+  .wishlist-item img {
+    width: 100px;
+    height: 110px;
+  }
+  .wishlist-item p {
+    font-size: 1.2rem;
+    width: 25%;
+    height: 100px;
+    overflow: visible;
+  }
+  .wishlist-item button {
+    padding: 0.8rem;
+    border-radius: 20px;
+  }
+
+  .wishlist-item button:hover {
+    font-size: 1rem;
+    background-color: rgb(15, 114, 226);
+  }
+  .wishlist-item span:nth-child(4) {
+    color: rgb(20, 163, 20);
+    width: 10%;
+  }
+}

@@ -1,0 +1,77 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  font-size: 1.3rem;
+}
+.search-bar .search-input {
+  border-radius: 10px;
+  padding: 2px;
+  margin: 0 2px 0 1px;
+}
+.fa-magnifying-glass:hover {
+  color: #ff500a;
+  cursor: pointer;
+}
+.search-bar .search-input:focus {
+  outline: none;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav-ul a {
+  padding: 15px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: black;
+  transition: all 300ms ease-out;
+}
+
+.nav-ul a:hover,
+.nav-ul a:focus {
+  color: orangered;
+  box-shadow: inset 0px -20px 0px -15px orangered;
+  padding-top: 2px;
+}
+
+.nav-ul a:focus {
+  outline: none;
+}
+.nav-ul a:after {
+  content: "";
+  margin-left: 0.5rem;
+  display: inline-block;
+  color: orangered;
+  position: absolute;
+  transform: translatey(10px);
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+.nav-ul a:active:after {
+  opacity: 1;
+  transform: translatey(-2px);
+}
+.search-bar {
+  width: 100%;
+}
+
+.search-bar .fa-cart-shopping {
+  margin: 0 10px 0 10px;
+}
+
+.search-bar .fa-cart-shopping,
+.search-bar .fa-heart {
+  color: #000000;
+}
+
+.search-bar .fa-cart-shopping:hover,
+.search-bar .fa-heart:hover {
+  color: #ff500a;
+}
